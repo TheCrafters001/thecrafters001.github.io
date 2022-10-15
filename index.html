@@ -2,44 +2,53 @@
 <html>
     <head>
         <title>Coming Soon - TheCrafters001</title>
-        <script>
-            /* The following code was made by
-                W3Schools. All rights belong to
-                them for this code.
 
-                https://www.w3schools.com/howto/howto_html_include.asp */
-            function includeHTML() {
-                var z, i, elmnt, file, xhttp;
-                /* Loop through a collection of all HTML elements: */
-                z = document.getElementsByTagName("*");
-                for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /* Make an HTTP request using the attribute value as the file name: */
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        /* Remove the attribute, and call this function once more: */
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /* Exit the function: */
-                    return;
-                }
-                }
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- The page supports both dark and light color schemes,
+            and the page author prefers / default is light. -->
+        <meta name="color-scheme" content="light dark">
+
+        <!-- Replace the Bootstrap CSS with the
+            Bootstrap-Dark Variant CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css" rel="stylesheet">
+
+        <!-- Optional Meta Theme Color is also supported on Safari and Chrome -->
+        <meta name="theme-color" content="#111111" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#eeeeee" media="(prefers-color-scheme: dark)">
+
+        <style>
+
+            /* Sticky Header Credit: https://kiranworkspace.com/how-to-stick-footer-to-bottom-of-page/ */
+
+            body{
+                display:flex;
+                flex-direction:column;
+                min-height:100vh;
             }
-        </script>
+            .wrapper{
+                flex:1;
+            }
+        </style>
     </head>
     <body>
-        <div w3-include-html="/assets/includes/header.html"></div> 
-        <div w3-include-html="/assets/includes/nav.html"></div> 
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-light text-decoration-none">
+                <h1>TheCrafters001</h1>
+              </a>
+        
+              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link px-2 link-light">Home</a></li>
+                <li><a href="/software/" class="nav-link px-2 link-light">Software</a></li>
+                <li><a href="/games/" class="nav-link px-2 link-light">Games</a></li>
+                <li><a href="/faq/" class="nav-link px-2 link-light">FAQs</a></li>
+                <li><a href="/about/" class="nav-link px-2 link-light">About</a></li>
+              </ul>
+            </header>
+        </div>
         
         <div class="wrapper">
             <div class="container">
@@ -48,10 +57,16 @@
             </div>
         </div>
         
-        <div w3-include-html="/assets/includes/footer.html"></div>
+        <footer class="footer mt-auto py-3" class="footer" id="footer">
+            <div class="container">
+                <span class="text-muted">&copy; 2017<script>new Date().getFullYear()>2017&&document.write("-"+new Date().getFullYear());</script>, TheCrafters001.</span>
+            </div>
+        </footer>
 
-        <script>
-            includeHTML();
-        </script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
