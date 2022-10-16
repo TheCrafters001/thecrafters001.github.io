@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Games - TheCrafters001</title>
+        <title>Software - TheCrafters001</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -22,7 +22,7 @@
         <meta name="theme-color" content="#111111" media="(prefers-color-scheme: light)">
         <meta name="theme-color" content="#eeeeee" media="(prefers-color-scheme: dark)">
 
-        <!-- Favicons -->
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png?v=1">
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png?v=1">
         <link rel="icon" type="image/png" sizes="192x192" href="/assets/ico/android-chrome-192x192.png?v=1">
@@ -71,62 +71,47 @@
         
         <div class="wrapper">
             <div class="container">
-                <h1>Games</h1>
 
-                <h2>Original Games</h2>
-                
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Game Name</th>
-                        <th scope="col">Version</th>
-                        <th scope="col">Is Supported?</th>
-                        <th scope="col">Game Page</th>
-                        <th scope="col">Download</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                </table>
-
-                
-                <hr />
-
-                <h2>Fan Games</h2>
-
-                <div class="alert alert-info" role="alert">
-                    <h4 class="alert-heading">Notice!</h4>
-                    <p>Any of the games are a part of a series I do <b><i>NOT</i></b> own. All rights go to their original owners.</p>
+                <!-- Game Card -->
+                <div class="float-md-start" style="padding-right:12px;">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="Game Logo">
+                        <div class="card-body">
+                            <h3>Game Name</h3>
+                            <p class="card-text">
+                                Game Tagline
+                            </p>
+                            <a href="#" class="btn btn-primary">Download</a>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- Software Info -->
+                <div class="card text-center">
+                    <div class="card-header">
+                        <nav>
+                            <!-- Tab Navigation -->
+                            <div class="nav nav-tabs card-header-tabs" id="nav-tab" role="tablist">
+                              <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="true">Game Description</button>
+                              <button class="nav-link" id="nav-screenshot-tab" data-bs-toggle="tab" data-bs-target="#nav-screenshot" type="button" role="tab" aria-controls="nav-screenshot" aria-selected="false">Screenshots</button>
+                            </div>
+                        </nav>                          
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="nav-tabContent">
 
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Software Name</th>
-                        <th scope="col">Version</th>
-                        <th scope="col">Is Supported?</th>
-                        <th scope="col">Game Page</th>
-                        <th scope="col">Download</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Pok&eacute;mon Delta Green</td>
-                        <td>Demo 3</td>
-                        <td>⚠️ (Yes, currently in major overhaul)</td>
-                        <td><a href="/games/fangames/pdg/">Visit Page</a></td>
-                        <td><a href="https://reliccastle.com/threads/3199/" target="_blank">Download</a></td>
-                      </tr>
-                    </tbody>
-                </table>
+                            <!-- Game Info Tab -->
+                            <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab" tabindex="0">
+                                Game Info
+                            </div>
 
+                            <!-- Game Screenshots Tab -->
+                            <div class="tab-pane fade" id="nav-screenshot" role="tabpanel" aria-labelledby="nav-screenshot-tab" tabindex="0">
+                                Screenshots
+                            </div>
+                        </div>
+                    </div>
+                  </div>
 
             </div>
         </div>
