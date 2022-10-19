@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Software - TheCrafters001</title>
+        <title>Untitled Launcher - TheCrafters001</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -22,6 +22,7 @@
         <meta name="theme-color" content="#111111" media="(prefers-color-scheme: light)">
         <meta name="theme-color" content="#eeeeee" media="(prefers-color-scheme: dark)">
 
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png?v=1">
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png?v=1">
         <link rel="icon" type="image/png" sizes="192x192" href="/assets/ico/android-chrome-192x192.png?v=1">
@@ -70,35 +71,50 @@
         
         <div class="wrapper">
             <div class="container">
-                <h1>Software</h1>
 
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Software Name</th>
-                        <th scope="col">Version</th>
-                        <th scope="col">Is Supported?</th>
-                        <th scope="col">Software Page</th>
-                        <th scope="col">Download</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Untitled Launcher</td>
-                        <td>0.0.0</td>
-                        <td>⚠️ (Yes, very early development stages)</td>
-                        <td><a href="/software/UntitledLauncher/">Visit Page</a></td>
-                        <td><a href="https://github.com/TheCrafters001/UntitledLauncher" target="_blank">Visit GitHub</a></td>
-                      </tr>
-                      <tr>
-                        <td>Showdown to Essentials Converter</td>
-                        <td>3.0.0</td>
-                        <td>✅</td>
-                        <td><b>N/A</b></td>
-                        <td><a href="https://github.com/TheCrafters001/showdown-to-essentials/releases/download/3.0.0/ShowdowntoEssentials.Converter.exe">Download v3.0.0</a></td>
-                      </tr>
-                    </tbody>
-                </table>
+                <!-- Software Card -->
+                <div class="float-md-start" style="padding-right:12px;">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="https://raw.githubusercontent.com/TheCrafters001/UntitledLauncher/master/logo/FullLogo.png" class="card-img-top" alt="Software Image">
+                        <div class="card-body">
+                            <h3>Untitled Launcher</h3>
+                            <p class="card-text">
+                                Just a random thing I thought would be cool to work on.
+                            </p>
+                            <a href="https://github.com/TheCrafters001/UntitledLauncher" class="btn btn-primary">Visit GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software Info -->
+                <div class="card text-center">
+                    <div class="card-header">
+                        <nav>
+                            <!-- Tab Navigation -->
+                            <div class="nav nav-tabs card-header-tabs" id="nav-tab" role="tablist">
+                              <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="true">Software Info</button>
+                              <button class="nav-link" id="nav-updates-tab" data-bs-toggle="tab" data-bs-target="#nav-updates" type="button" role="tab" aria-controls="nav-updates" aria-selected="false">Update History</button>
+                            </div>
+                        </nav>                          
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="nav-tabContent">
+
+                            <!-- Software Info Tab -->
+                            <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab" tabindex="0">
+                                <p>
+                                    This software is just a random idea I had, and kinda is based off an <a href="https://github.com/TheCrafters001/TheCrafters001-Launcher/" target="_blank">old project of mine</a>.<br>
+                                    I just thought this would be a cool idea to try again, because the old way I did it really didn't work well. So... yeah.
+                                </p>
+                            </div>
+
+                            <!-- Software Update History Tab -->
+                            <div class="tab-pane fade" id="nav-updates" role="tabpanel" aria-labelledby="nav-updates-tab" tabindex="0">
+                                N/A
+                            </div>
+                        </div>                          
+                    </div>
+                  </div>
 
             </div>
         </div>
