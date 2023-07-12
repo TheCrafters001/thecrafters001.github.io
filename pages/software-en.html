@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Software</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">TheCrafters001</a></h1>
+                <nav><ul>
+                    <li><a href="/pages/games-en.html">Games</a></li>
+                    <li><a href="/pages/social-en.html">Social</a></li>
+                    <li class="active"><a href="/pages/software-en.html">Software</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Software</h1>
+    
+    <table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Version</th>
+<th>Download</th>
+<th>Github</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pok&eacute;Farm Q Desktop App</td>
+<td><span id="pfq">Loading...</span></td>
+<td><a href="https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/PokeFarmSetup.exe">Download</a></td>
+<td><a href="https://github.com/TheCrafters001/pokeFarmQApp">GitHub</a></td>
+</tr>
+<tr>
+<td>Showdown to Essential Converter</td>
+<td><span id="ste">Loading...</span></td>
+<td><a href="https://github.com/TheCrafters001/showdown-to-essentials/releases/latest/download/ShowdowntoEssentials.Converter.exe">Download</a></td>
+<td><a href="https://github.com/TheCrafters001/showdown-to-essentials">GitHub</a></td>
+</tr>
+<tr>
+<td>Move Generator</td>
+<td><span id="mg">Loading...</span></td>
+<td><a href="https://github.com/TheCrafters001/Move-Generator/releases/latest/download/MoveGeneratorSetup.exe">Download</a></td>
+<td><a href="https://github.com/TheCrafters001/Move-Generator">GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+    // modified version of this answer
+    // https://stackoverflow.com/a/32342763/7799766
+
+    var gitHubPath;
+
+    function repoID(repo){
+        gitHubPath = 'TheCrafters001/' + repo
+    }
+
+    function releaseFetch(repo,id){
+        var url = 'https://api.github.com/repos/' + gitHubPath + '/releases';
+
+        $.get(url).done(function (data) {
+            var releases = data.filter(function (release) {
+                return !release.prerelease;
+            })
+            releases = releases.sort(function (v1, v2) {
+                return Date.parse(v2.published_at) - Date.parse(v1.published_at);
+            });
+            console.log(releases[0]);
+            document.getElementById(id).innerHTML = releases[0].name;
+        });
+    };
+
+</script>
+
+<!-- call Script Function from above -->
+
+<script>
+    releaseFetch(repoID("pokeFarmQApp"),'pfq')
+    releaseFetch(repoID("showdown-to-essentials"),'ste')
+    releaseFetch(repoID("move-generator"),'mg')
+</script>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://gamejolt.com/c/TF2">TF2 Game Jolt Community</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="/pages/social-en.html">Social Links</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
