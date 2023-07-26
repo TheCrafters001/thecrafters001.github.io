@@ -5,50 +5,64 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-11T21:22:47-00:00</lastmod>
+<lastmod>2023-07-26T16:56:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-11T21:22:47-00:00</lastmod>
+<lastmod>2023-07-26T16:56:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-11T21:22:47-00:00</lastmod>
+<lastmod>2023-07-26T16:56:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/pages/games-en.html</loc>
-<lastmod>2023-07-11T21:22:47-00:00</lastmod>
+<lastmod>2023-07-26T16:56:24-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/pages/social-en.html</loc>
-<lastmod>2023-07-11T21:22:47-00:00</lastmod>
+<lastmod>2023-07-26T16:56:24-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/pages/software-en.html</loc>
-<lastmod>2023-07-11T21:22:47-00:00</lastmod>
+<lastmod>2023-07-26T16:56:24-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/2023/07/new-site</loc>
+<loc>/2023/07/26/big-gamejolt-rant-rn</loc>
+<lastmod>2023-07-26T00:00:00-04:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/2023/07/11/new-site</loc>
 <lastmod>2023-07-11T18:31:00-04:00</lastmod>
 <changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/categories/archive</loc>
+<lastmod>2023-07-26T00:00:00-04:56</lastmod>
+<changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -69,6 +83,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tags/news</loc>
 <lastmod>2023-07-11T18:31:00-04:56</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/author/octolingnexus.html</loc>
+<lastmod>2023-07-26T00:00:00-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
