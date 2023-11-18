@@ -3,7 +3,7 @@
     
     <head>
         <!-- Title -->
-        <title>TheCrafters001</title>
+        <title>Fan-Games List - TheCrafters001</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -58,7 +58,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/software/">Software</a>
@@ -78,45 +78,42 @@
             </div>
         </nav>
 
-        <!-- Software Hero -->
-        <div style="background: linear-gradient(130deg, rgba(2,0,36,1) 0%, rgba(0,48,0,1) 35%, rgba(0,144,0,1) 100%);">
-            <div class="container">
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="/assets/static/imgs/hero.png" class="d-block mx-lg-auto img-fluid" alt="Visual Studio Project" width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Free, Open-Source Software!</h1>
-                    <p class="lead">I make software every now and then. A lot of which, is free and open-source! Wanna see what I am working on? Click the button below!</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="/software/"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Software</button></a>
-                    <a href="https://github.com/TheCrafters001"><button type="button" class="btn btn-outline-secondary btn-lg px-4">GitHub</button></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
+        <!-- List for Fangames -->
+        <div class="container my-3">
+            <h1 class="fw-bold">Fan-Games</h1>
 
-        <!-- Game Hero -->
-        <div style="background: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(0,5,48,1) 35%, rgba(0,0,144,1) 100%);">
-            <div class="px-4 py-5 text-center">
-                <h1 class="display-5 fw-bold text-body-emphasis">Indie Game Dev</h1>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">I am a solo Indie Game Dev! I make games using RPG Maker, which I know isn't the best engine, but I try to make a game using it reguardless. For me, it is a start.</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <a href="/games/originals/"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">Originals</button></a>
-                        <a href="/games/fan-games/"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Fan-Games</button></a>
-                        <a href="/games/list.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Full List</button></a>
-                    </div>
+            <!-- Fan-Games -->
+            <div class="alert alert-primary" role="alert">
+                <i class="fa fa-exclamation-triangle"></i> &nbsp;
+                <div>
+                  Fan-Games are not to be considered official property of the original series, franchise, or game. Please visit the Game Page or Download link to see more info.
                 </div>
             </div>
-        </div>
 
-        <div class="py-4 text-center">
-            <h4 class="display-8 fw-bold text-body-emphasis">Looking for the old site?</h4>
-            <div class="col-lg-5 mx-auto">
-                <p class="mb-4 lead">I have an archive of my old site. It will remain up for the time being, but it will soon be taken down. You can visit it <a href="/archive/" class="link">here</a>.</p>
-            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Game Name</th>
+                        <th scope="col">Version</th>
+                        <th scope="col">Supported</th>
+                        <th scope="col">Original Release Date</th>
+                        <th scope="col">Download</th>
+                        <th scope="col">Page</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!-- PDG -->
+                    <tr>
+                        <th scope="row">Pok&eacute;mon Delta Green</th>
+                        <td>Demo 3</td>
+                        <td>Hiatus</td>
+                        <td>In Development</td>
+                        <td><a href="https://reliccastle.com/threads/3199/">Download</a></td>
+                        <td><a href="/games/fan-games/deltagreen">Game Page</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <!-- Footer -->
