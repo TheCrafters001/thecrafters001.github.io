@@ -47,6 +47,54 @@
             }
         </style>
 
+
+        <h3>Pok&eacute;mon Presents</h3>
+        <div class="card-group">
+            <!-- GAME -->
+            <div class="card">
+                <img src="./assets/img/presents-feb2724.png" class="card-img-top" alt="Pok&eacute;mon Presents Logo">
+              <div class="card-body">
+                <h5 class="card-title">February 2024</h5>
+                <p class="card-text">
+                    <div class="tick" data-did-init="presents_feb2724">
+                        <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(y, M, d, h, m, s) -> delay">
+                            <div class="tick-group">
+                                <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                                    <span data-view="flip"></span>
+                                </div>
+                                <span data-key="label" data-view="text" class="tick-label"></span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <script>
+                        function presents_feb2724(tick) {
+                    
+                            // format of since date is ISO8601
+                            // https://en.wikipedia.org/wiki/ISO_8601
+                    
+                            // '2000'                       to count up from 2000
+                            // '2000-01-31T12:00:00'        to count up from 12 o'clock on the 31st of January 2000
+                            // '2000-01-15T10:00:00+01:00'  to count up from 10 o'clock GMT+1 on the 15th of January 2000
+                    
+                            // create counter
+                            Tick.count.down('2024-02-27T09:00:00-05:00', { format: ['y','M','d','h','m','s'] }).onupdate = function (value) {
+                                tick.value = value;
+                            };
+                    
+                        }
+                    </script>
+                </p>
+                <p class="card-text">Image from Pok&eacute;mon Official Twitter</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Released November 18th, 2022</small>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
         <h3>Current Main Line</h3>
         <div class="card-group">
             <!-- GAME -->
