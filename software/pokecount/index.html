@@ -49,52 +49,7 @@
 
 
         <h3>Pok&eacute;mon Presents</h3>
-        <div class="card-group">
-            <!-- GAME -->
-            <div class="card">
-                <img src="./assets/img/presents-feb2724.png" class="card-img-top" alt="Pok&eacute;mon Presents Logo">
-              <div class="card-body">
-                <h5 class="card-title">February 2024</h5>
-                <p class="card-text">
-                    <div class="tick" data-did-init="presents_feb2724">
-                        <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(y, M, d, h, m, s) -> delay">
-                            <div class="tick-group">
-                                <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
-                                    <span data-view="flip"></span>
-                                </div>
-                                <span data-key="label" data-view="text" class="tick-label"></span>
-                            </div>
-                        </div>
-                    
-                    </div>
-                    <script>
-                        function presents_feb2724(tick) {
-                    
-                            // format of since date is ISO8601
-                            // https://en.wikipedia.org/wiki/ISO_8601
-                    
-                            // '2000'                       to count up from 2000
-                            // '2000-01-31T12:00:00'        to count up from 12 o'clock on the 31st of January 2000
-                            // '2000-01-15T10:00:00+01:00'  to count up from 10 o'clock GMT+1 on the 15th of January 2000
-                    
-                            // create counter
-                            Tick.count.down('2024-02-27T09:00:00-05:00', { format: ['y','M','d','h','m','s'] }).onupdate = function (value) {
-                                tick.value = value;
-                            };
-                    
-                        }
-                    </script>
-                </p>
-                <p class="card-text">Image from Pok&eacute;mon Official Twitter</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Live February 27th, 2024 (Pok&eacute;mon Day)</small>
-              </div>
-            </div>
-        </div>
-
-        <hr>
-
+            
         <h3>Current Main Line</h3>
         <div class="card-group">
             <!-- GAME -->
@@ -286,26 +241,52 @@
 
         <hr>
         <h3>Current Spin Off</h3>
-        <div class="alert alert-danger" role="alert">
+        <!--<div class="alert alert-danger" role="alert">
             <p class="mb-0">
                 None at the moment.
             </p>
-        </div>
+        </div>-->
 
         <div class="card-group">
             <div class="card">
-                <!--<img src="" class="card-img-top" alt="">-->
-                <div class="card-body">
-                  <h5 class="card-title" aria-hidden="true" ><span aria-hidden="true" class="placeholder-glow"><span class="placeholder" style="width: 100%;"></span></span></h5>
-                  <p class="card-text" aria-hidden="true">                        
-                      <p aria-hidden="true" class="placeholder-glow">
-                          <span class="placeholder" style="width: 100%;"></span>
-                      </p>
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary"><span aria-hidden="true" class="placeholder-glow"><span class="placeholder placeholder-sm" style="width: 100%;"></span></span></small>
-                </div>
+                <img src="https://legends.pokemon.com/_images/logos/legendslogo_en.webp" class="card-img-top" alt="Scarlet/Violet Artwork">
+              <div class="card-body">
+                <h5 class="card-title">Legends Z-A</h5>
+                <p class="card-text">
+                    <div class="tick" data-did-init="legends_za">
+                        <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(y, M, d, h, m, s) -> delay">
+                            <div class="tick-group">
+                                <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                                    <span data-view="flip"></span>
+                                </div>
+                                <span data-key="label" data-view="text" class="tick-label"></span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <script>
+                        function legends_za(tick) {
+                    
+                            // format of since date is ISO8601
+                            // https://en.wikipedia.org/wiki/ISO_8601
+                    
+                            // '2000'                       to count up from 2000
+                            // '2000-01-31T12:00:00'        to count up from 12 o'clock on the 31st of January 2000
+                            // '2000-01-15T10:00:00+01:00'  to count up from 10 o'clock GMT+1 on the 15th of January 2000
+                    
+                            // create counter
+                            Tick.count.down('2025-12-31T00:00:00-04:00', { format: ['y','M','d','h','m','s'] }).onupdate = function (value) {
+                                tick.value = value;
+                            };
+                    
+                        }
+                    </script>
+                </p>
+                <p class="card-text">Image from Pok&eacute;mon Official Site</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Released November 18th, 2022</small>
+              </div>
             </div>
 
             <div class="card">
@@ -340,6 +321,51 @@
         </div>
 
         <hr>
+
+        <div class="card">
+            <!--<img src="./assets/img/presents-feb2724.png"  alt="Pok&eacute;mon Presents Logo">-->
+            <iframe width="560" height="315" class="card-img-top" src="https://www.youtube-nocookie.com/embed/uq-Znr_jGIg?si=Lc3T_dw6o9N9LeU1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title">February 2024</h5>
+            <p class="card-text">
+                <div class="tick" data-did-init="presents_feb2724">
+                    <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(y, M, d, h, m, s) -> delay">
+                        <div class="tick-group">
+                            <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                                <span data-view="flip"></span>
+                            </div>
+                            <span data-key="label" data-view="text" class="tick-label"></span>
+                        </div>
+                    </div>
+                
+                </div>
+                <script>
+                    function presents_feb2724(tick) {
+                
+                        // format of since date is ISO8601
+                        // https://en.wikipedia.org/wiki/ISO_8601
+                
+                        // '2000'                       to count up from 2000
+                        // '2000-01-31T12:00:00'        to count up from 12 o'clock on the 31st of January 2000
+                        // '2000-01-15T10:00:00+01:00'  to count up from 10 o'clock GMT+1 on the 15th of January 2000
+                
+                        // create counter
+                        Tick.count.up('2024-02-27T09:00:00-05:00', { format: ['y','M','d','h','m','s'] }).onupdate = function (value) {
+                            tick.value = value;
+                        };
+                
+                    }
+                </script>
+            </p>
+            <p class="card-text">Video from Pok&eacute;mon Official YouTube</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Live February 27th, 2024 (Pok&eacute;mon Day)</small>
+          </div>
+        </div>
+    </div>
+
+    <hr>
 
         <div class="text-center">
             <h3>Powered by <a href="https://github.com/pqina/flip/" target="_blank">flip</a></h3>
